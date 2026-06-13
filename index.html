@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinshuk Attri | Principal Product Manager</title>
+<meta name="description" content="Principal Product Manager who turns messy operating problems into trusted product systems. AI, computer vision, IoT, traceability, compliance, and enterprise SaaS across global supply chains.">
+<meta property="og:title" content="Kinshuk Attri | Principal Product Manager">
+<meta property="og:description" content="You bring the messy operating problem. I turn it into a product system.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#23271f;--ink2:#46493d;--mut:#6a6d5f;
+  --paper:#FBF8F1;--paper2:#F4EEE1;--sand:#EAE1CD;--line:#E4DBC6;
+  --forest:#1C3A2E;--forest2:#16302568;--deep:#122620;--moss:#46604f;
+  --gold:#A07C32;--gold2:#C19A4E;--goldf:#EBDFC2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.brand,.igv,.head,.chead{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.012em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(160,124,50,.22)}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--paper2)}
+::-webkit-scrollbar-thumb{background:#cdc3a8;border-radius:9px;border:3px solid var(--paper2)}
+.r{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.3,1),transform .7s cubic-bezier(.2,.6,.3,1)}
+.r.in{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.r{opacity:1;transform:none;transition:none}.track,.glow,.grain{animation:none!important}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .3s,box-shadow .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.scr{background:rgba(251,248,241,.78);backdrop-filter:blur(12px);border-color:var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:1.12rem;font-weight:600;color:var(--forest);display:flex;align-items:baseline;gap:9px}
+.brand i{font-family:'Manrope';font-style:normal;font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.links{display:none;gap:2px}
+.links a{font-size:.82rem;font-weight:500;color:var(--ink2);padding:7px 12px;border-radius:99px;transition:background .2s,color .2s}
+.links a:hover{background:var(--sand);color:var(--forest)}
+.links a.active{background:var(--forest);color:var(--paper)}
+.burger{display:flex;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:22px;height:2px;background:var(--forest);transition:.25s}
+.burger[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] span:last-child{transform:translateY(-0px) rotate(-45deg)}
+.mob{display:none;flex-direction:column;background:rgba(251,248,241,.97);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px 24px 16px}
+.mob.open{display:flex}
+.mob a{padding:11px 6px;font-size:.95rem;font-weight:500;border-bottom:1px solid var(--line)}
+.mob a:last-child{border:0}
+@media(min-width:1040px){.links{display:flex}.burger{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:138px 24px 0;background:radial-gradient(1100px 560px at 82% -8%,rgba(193,154,78,.16),transparent 58%),radial-gradient(840px 460px at -5% 8%,rgba(28,58,46,.07),transparent 55%)}
+.grain{position:absolute;inset:0;background-image:radial-gradient(rgba(28,58,46,.05) 1px,transparent 1px);background-size:26px 26px;mask-image:radial-gradient(70% 60% at 50% 35%,#000,transparent);opacity:.7}
+.hero-in{position:relative;max-width:1180px;margin:0 auto;display:grid;gap:52px;align-items:center;padding-bottom:60px}
+@media(min-width:1000px){.hero-in{grid-template-columns:1.35fr .65fr}}
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(255,255,255,.6);border-radius:99px;padding:7px 16px;font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--forest);margin-bottom:26px}
+.ping{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(160,124,50,.5);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(160,124,50,.5)}70%{box-shadow:0 0 0 7px rgba(160,124,50,0)}100%{box-shadow:0 0 0 0 rgba(160,124,50,0)}}
+.hero h1{font-size:clamp(2.35rem,5.4vw,4rem);line-height:1.06;color:var(--forest);margin-bottom:26px}
+.hero h1 .ital{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:clamp(1rem,1.5vw,1.22rem);color:var(--ink2);max-width:40em;margin-bottom:18px}
+.hero-line{font-size:.98rem;color:var(--forest);border-left:2px solid var(--gold2);padding-left:16px;max-width:38em;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:9px;border-radius:99px;padding:13px 27px;font-size:.88rem;font-weight:600;transition:transform .22s,background .22s,border-color .22s,box-shadow .22s;cursor:pointer;border:1px solid transparent}
+.btn i{font-style:normal;transition:transform .22s}
+.btn.primary{background:var(--forest);color:var(--paper);box-shadow:0 12px 30px -12px rgba(28,58,46,.45)}
+.btn.primary:hover{background:var(--deep);transform:translateY(-2px)}
+.btn.primary:hover i{transform:translateX(3px)}
+.btn.ghost{border-color:rgba(28,58,46,.26);background:rgba(255,255,255,.5);color:var(--forest)}
+.btn.ghost:hover{border-color:var(--forest);background:#fff}
+.btn.bare{color:var(--forest);padding:13px 12px}
+.btn.bare:hover{color:var(--gold);text-decoration:underline;text-underline-offset:5px}
+.hero-card{position:relative;max-width:330px;width:100%;margin:0 auto}
+.card-frame{position:absolute;inset:-11px -11px 22px;border:1px solid rgba(160,124,50,.35);border-radius:26px;clip-path:polygon(7% 0,100% 0,100% 93%,93% 100%,0 100%,0 7%)}
+.pcard{position:relative;background:rgba(255,255,255,.62);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:13px;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 22px 48px -22px rgba(28,58,46,.3)}
+.pphoto{aspect-ratio:4/5;border-radius:15px;overflow:hidden;background:linear-gradient(160deg,var(--sand),var(--paper2))}
+.pphoto img{width:100%;height:100%;object-fit:cover}
+.pphoto.noimg img{display:none}
+.pphoto.noimg::after{content:"Add photo";display:grid;place-items:center;height:100%;color:var(--mut);font-size:.8rem}
+.pmeta{display:flex;align-items:center;justify-content:space-between;padding:13px 6px 9px;gap:10px}
+.pmeta b{font-family:'Fraunces';font-size:1.08rem;color:var(--forest);display:block}
+.pmeta span{font-size:.68rem;color:var(--mut)}
+.pmeta em{font-style:normal;background:var(--goldf);color:var(--gold);font-size:.58rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:5px 10px;border-radius:99px;white-space:nowrap}
+.ptags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:6px 4px 2px}
+.ptags li{font-size:.66rem;font-weight:600;color:var(--moss);border:1px solid var(--line);border-radius:99px;padding:4px 9px;background:rgba(255,255,255,.5)}
+
+/* ticker */
+.ticker{border-block:1px solid var(--line);background:rgba(244,238,225,.7);padding:13px 0;overflow:hidden}
+.track{display:flex;gap:11px;width:max-content;animation:tk 52s linear infinite;padding:0 11px}
+.ticker:hover .track{animation-play-state:paused}
+.track span{white-space:nowrap;border:1px solid var(--line);background:rgba(255,255,255,.82);border-radius:99px;padding:6px 16px;font-size:.83rem;color:var(--forest)}
+.track span::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:middle}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{max-width:1180px;margin:0 auto;padding:108px 24px}
+.sec.alt{max-width:none;background:var(--paper2);border-block:1px solid var(--line)}
+.sec.alt>*{max-width:1180px;margin-left:auto;margin-right:auto}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.enum{font-family:'Fraunces';font-style:italic;font-size:.95rem;color:var(--moss);letter-spacing:0}
+.head{font-size:clamp(1.85rem,3.7vw,2.8rem);line-height:1.13;color:var(--forest);max-width:18em}
+.head.light{color:var(--paper)}
+.lede{font-size:1.05rem;color:var(--ink2);max-width:46em;margin-top:18px}
+.lede.dim{color:rgba(251,248,241,.74)}
+.lede.center{margin-inline:auto;text-align:center}
+
+/* thesis */
+.loopbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:40px 0 36px}
+.lb{font-family:'Fraunces';font-size:.95rem;color:var(--forest);background:#fff;border:1px solid var(--line);border-radius:99px;padding:7px 18px}
+.lbsep{color:var(--gold2);font-style:normal}
+.loopgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.loop{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.loop:hover{transform:translateY(-4px);border-color:rgba(160,124,50,.45);box-shadow:0 22px 44px -22px rgba(28,58,46,.22)}
+.loopn{font-family:'Fraunces';font-style:italic;font-size:1.4rem;color:var(--gold2)}
+.loop h3{font-size:1.2rem;color:var(--forest);margin:8px 0 10px}
+.loop p{font-size:.92rem;color:var(--ink2)}
+
+/* dark sections */
+.sec.dark{max-width:none;background:var(--forest);color:var(--paper);position:relative;border-block:1px solid var(--deep);padding:108px 24px}
+.sec.dark .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(251,248,241,.06) 1px,transparent 1px);background-size:26px 26px}
+.sec-in{position:relative;max-width:1180px;margin:0 auto}
+.pillars{display:grid;gap:18px;margin:42px 0 36px}
+@media(min-width:860px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillar{background:rgba(251,248,241,.05);border:1px solid rgba(251,248,241,.16);border-radius:20px;padding:28px;transition:transform .3s,border-color .3s}
+.pillar:hover{transform:translateY(-3px);border-color:rgba(193,154,78,.5)}
+.pnum{font-family:'Fraunces';font-style:italic;color:var(--gold2);font-size:1.1rem}
+.pillar h3{font-size:1.3rem;color:var(--paper);margin:6px 0 4px}
+.ptag{font-family:'Fraunces';font-style:italic;color:var(--gold2);font-size:1rem;margin-bottom:12px}
+.ppurpose{font-size:.92rem;color:rgba(251,248,241,.78);margin-bottom:16px}
+.pillar ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.pillar li{font-size:.86rem;color:rgba(251,248,241,.82);padding-left:18px;position:relative}
+.pillar li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--gold2);transform:rotate(45deg)}
+.chainwrap{margin:30px 0 38px;padding:24px;border:1px dashed rgba(251,248,241,.22);border-radius:18px}
+.chainhead{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:16px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.chain .chip{background:rgba(251,248,241,.08);border:1px solid rgba(251,248,241,.18);border-radius:99px;padding:8px 16px;font-size:.85rem;color:var(--paper)}
+.chain i{color:var(--gold2);font-style:normal}
+.ba{display:grid;gap:16px;align-items:stretch;margin-bottom:36px}
+@media(min-width:760px){.ba{grid-template-columns:1fr auto 1fr}}
+.bacol{background:rgba(251,248,241,.05);border:1px solid rgba(251,248,241,.16);border-radius:18px;padding:24px}
+.bacol.after{border-color:rgba(193,154,78,.4)}
+.balabel{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,248,241,.6);margin-bottom:14px}
+.balabel.gold{color:var(--gold2)}
+.bacol ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.bacol li{font-size:.9rem;color:rgba(251,248,241,.85);padding-left:16px;position:relative}
+.before li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:rgba(251,248,241,.4)}
+.after li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--gold2);transform:rotate(45deg)}
+.baarrow{display:grid;place-items:center;font-size:1.6rem;color:var(--gold2)}
+.owned{background:rgba(251,248,241,.05);border:1px solid rgba(251,248,241,.16);border-radius:18px;padding:26px}
+.ownedhead{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:16px}
+.owned ul{list-style:none;display:grid;gap:9px}
+@media(min-width:680px){.owned ul{grid-template-columns:1fr 1fr}}
+.owned li{font-size:.9rem;color:rgba(251,248,241,.85);padding-left:18px;position:relative}
+.owned li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--gold2);transform:rotate(45deg)}
+
+/* case studies */
+.csgrid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));margin-top:42px}
+.csc{text-align:left;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;cursor:pointer;transition:transform .3s,box-shadow .3s,border-color .3s,background .3s}
+.csc:hover{transform:translateY(-4px);border-color:rgba(160,124,50,.45);box-shadow:0 22px 44px -22px rgba(28,58,46,.24)}
+.csc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.cst{font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:var(--goldf);padding:5px 11px;border-radius:99px}
+.csarrow{color:rgba(28,58,46,.4);font-size:1.1rem;transition:transform .25s,color .25s}
+.csc:hover .csarrow{transform:translate(3px,-3px);color:var(--gold)}
+.csc h3{font-size:1.26rem;line-height:1.25;color:var(--forest);margin:18px 0 5px}
+.csclient{font-size:.82rem;font-weight:600;color:var(--moss);margin-bottom:12px}
+.csone{font-size:.92rem;color:var(--ink2)}
+.csopen{display:inline-block;margin-top:18px;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.csc.open{background:var(--forest);border-color:var(--gold2)}
+.csc.open h3{color:var(--paper)}
+.csc.open .csclient{color:var(--gold2)}
+.csc.open .csone{color:rgba(251,248,241,.78)}
+.csc.open .cst{background:rgba(251,248,241,.1);color:var(--gold2)}
+.csc.open .csopen,.csc.open .csarrow{color:var(--gold2)}
+.csd{margin-top:36px;animation:fade .5s cubic-bezier(.2,.6,.3,1)}
+@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.csd-in{background:var(--paper2);border:1px solid rgba(28,58,46,.16);border-radius:24px;padding:32px}
+@media(min-width:760px){.csd-in{padding:46px}}
+.csd-grid{display:grid;gap:32px}
+@media(min-width:900px){.csd-grid{grid-template-columns:1fr 1fr;column-gap:44px}}
+.csd-col{display:grid;gap:30px;align-content:start}
+.csd-foot{display:grid;gap:30px}
+@media(min-width:900px){.csd-foot{grid-template-columns:1.1fr 1fr 1fr;column-gap:36px}}
+.db .dbh{font-size:.67rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:11px}
+.bs{font-size:.92rem;color:var(--ink2);margin-bottom:9px}
+.bs:last-child{margin-bottom:0}
+.bs.why{font-family:'Fraunces';font-style:italic;font-size:1.02rem;color:var(--forest);border-left:2px solid var(--gold2);padding-left:14px;background:rgba(255,255,255,.55);border-radius:6px;padding:10px 14px}
+.bs.grnd{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.bs.proves{font-family:'Fraunces';font-style:italic;font-size:1.02rem;color:var(--forest)}
+.dlist{list-style:none;display:grid;gap:9px}
+.dlist li{font-size:.9rem;color:var(--ink2);padding-left:17px;position:relative}
+.dlist li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--gold2);transform:rotate(45deg)}
+.dsteps{list-style:none;counter-reset:s;display:grid;gap:9px}
+.dsteps li{counter-increment:s;font-size:.9rem;color:var(--ink2);padding-left:30px;position:relative}
+.dsteps li::before{content:counter(s);position:absolute;left:0;top:1px;width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--forest);color:var(--paper);font-size:.62rem;font-weight:700;font-family:'Manrope'}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--line);background:#fff;border-radius:99px;padding:5px 13px;font-size:.78rem;color:var(--ink2)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent);margin:34px 0}
+
+/* systems */
+.sysgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));margin-top:42px}
+.sysc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.sysc:hover{transform:translateY(-3px);border-color:rgba(160,124,50,.45);box-shadow:0 18px 36px -20px rgba(28,58,46,.2)}
+.sysc h3{font-size:1.08rem;color:var(--forest);margin-bottom:9px}
+.sysc p{font-size:.88rem;color:var(--ink2);margin-bottom:14px}
+.syslayer{font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:var(--goldf);padding:4px 10px;border-radius:99px}
+
+/* thinking */
+.thinkgrid{display:grid;gap:18px;grid-template-columns:1fr;margin-top:42px}
+@media(min-width:760px){.thinkgrid{grid-template-columns:repeat(2,1fr)}}
+.thinkc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s;display:flex;flex-direction:column}
+.thinkc .tkclose{margin-top:auto}
+.thinkc:hover{transform:translateY(-4px);border-color:rgba(160,124,50,.45);box-shadow:0 22px 44px -22px rgba(28,58,46,.22)}
+.tk-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}
+.tkkind{font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);border:1px solid var(--line);padding:5px 11px;border-radius:99px}
+.tkph{font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:var(--goldf);padding:4px 9px;border-radius:99px}
+.thinkc h3{font-size:1.22rem;color:var(--forest);line-height:1.22}
+.tksub{font-size:.78rem;font-weight:600;color:var(--gold);margin:3px 0 12px}
+.tkblurb{font-size:.92rem;color:var(--ink2);margin-bottom:16px}
+.thinkc ul{list-style:none;display:grid;gap:9px;margin-bottom:16px}
+.thinkc li{font-size:.86rem;color:var(--ink2);padding-left:17px;position:relative}
+.thinkc li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--gold2);transform:rotate(45deg)}
+.tkclose{font-family:'Fraunces';font-style:italic;font-size:.95rem;color:var(--forest);border-top:1px solid var(--line);padding-top:14px;margin-bottom:18px}
+.deckbtn{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--forest);color:var(--forest);background:transparent;border-radius:99px;padding:10px 20px;font-size:.8rem;font-weight:700;letter-spacing:.02em;transition:background .22s,color .22s,transform .22s}
+.deckbtn:hover{background:var(--forest);color:var(--paper);transform:translateY(-2px)}
+.deckbtn .dicon{font-size:.9rem;transition:transform .22s}
+.deckbtn:hover .dicon{transform:translateY(2px)}
+
+/* leadership */
+.leadgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));margin-top:42px}
+.leadc{display:flex;gap:16px;align-items:flex-start;background:rgba(251,248,241,.05);border:1px solid rgba(251,248,241,.16);border-radius:16px;padding:22px;transition:transform .3s,border-color .3s}
+.leadc:hover{transform:translateY(-3px);border-color:rgba(193,154,78,.5)}
+.leadn{font-family:'Fraunces';font-style:italic;font-size:1.15rem;color:var(--gold2);flex-shrink:0}
+.leadc p{font-size:.92rem;color:rgba(251,248,241,.86)}
+
+/* impact */
+.impactwrap{display:grid;gap:30px;margin-top:42px}
+.igh{font-family:'Fraunces';font-size:1.12rem;color:var(--forest);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.igcards{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.igc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .3s,border-color .3s}
+.igc:hover{transform:translateY(-3px);border-color:rgba(160,124,50,.45)}
+.igv{font-size:1.7rem;color:var(--forest);line-height:1.1}
+.igl{font-size:.84rem;color:var(--ink2);margin-top:8px}
+
+/* about */
+.aboutgrid{display:grid;gap:44px;margin-top:8px}
+@media(min-width:980px){.aboutgrid{grid-template-columns:1.15fr .85fr}}
+.abp{font-size:1.02rem;color:var(--ink2);margin-top:18px}
+.abcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:0 22px 48px -24px rgba(28,58,46,.24)}
+.abphoto{aspect-ratio:5/4;border-radius:15px;overflow:hidden;background:linear-gradient(160deg,var(--sand),var(--paper2))}
+.abphoto img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+.abphoto.noimg img{display:none}
+.abfacts{list-style:none;display:grid;gap:0;margin-top:6px}
+.abfacts li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 8px;border-bottom:1px solid var(--line)}
+.abfacts li:last-child{border:0}
+.abfacts b{font-family:'Fraunces';font-weight:500;color:var(--forest);font-size:1rem}
+.abfacts span{font-size:.82rem;color:var(--mut);text-align:right}
+
+/* contact */
+.contact{position:relative;overflow:hidden;text-align:center;max-width:none;background:var(--paper2);border-top:1px solid var(--line)}
+.glow{position:absolute;bottom:-180px;left:50%;transform:translateX(-50%);width:720px;height:440px;border-radius:50%;background:rgba(193,154,78,.2);filter:blur(80px)}
+.contact-in{position:relative;max-width:780px;margin:0 auto}
+.contact .eyebrow{justify-content:center}
+.chead{font-size:clamp(2rem,4.6vw,3.1rem);color:var(--forest);margin-bottom:6px}
+.rolechips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:28px 0 0}
+.rolechips li{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 16px;font-size:.78rem;font-weight:500;color:var(--forest)}
+.cbtns{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.cnote{margin-top:22px;font-size:.82rem;color:var(--mut)}
+
+/* footer */
+.foot{background:var(--forest);color:var(--paper);padding:34px 24px;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center}
+@media(min-width:680px){.foot{flex-direction:row;justify-content:space-between;text-align:left;max-width:1180px;margin:0 auto;width:100%}}
+.foot b{font-family:'Fraunces';font-weight:500}
+.foot span{font-size:.76rem;color:rgba(251,248,241,.7);margin-left:10px}
+.foot .dim{font-size:.76rem;color:rgba(251,248,241,.6)}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#home">Kinshuk Attri<i>Principal PM</i></a>
+    <nav class="links" aria-label="Primary">
+      <a href="#home" data-nav="home">Home</a><a href="#thesis" data-nav="thesis">Thesis</a><a href="#flagship" data-nav="flagship">Flagship</a><a href="#work" data-nav="work">Work</a><a href="#systems" data-nav="systems">Systems</a><a href="#thinking" data-nav="thinking">Thinking</a><a href="#leadership" data-nav="leadership">Leadership</a><a href="#about" data-nav="about">About</a><a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-label="Menu"><span></span><span></span></button>
+  </div>
+  <div class="mob" id="mob"><a href="#home">Home</a><a href="#thesis">Thesis</a><a href="#flagship">Flagship</a><a href="#work">Work</a><a href="#systems">Systems</a><a href="#thinking">Thinking</a><a href="#leadership">Leadership</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</header>
+<main>
+
+<section id="home" class="hero">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="kicker r"><span class="ping"></span>Principal Product Manager · AI &middot; Traceability &middot; Enterprise SaaS</p>
+      <h1 class="r d1">You bring the messy operating problem.<br><span class="ital">I turn it into a product system.</span></h1>
+      <p class="hero-sub r d2">Most enterprise failures do not start with bad technology. They start with invisible operations. Excel sheets, WhatsApp updates, delayed lab reports, manual inspections, unclear ownership. I build the product layer that turns that chaos into trusted decisions.</p>
+      <p class="hero-line r d3">Five years, one company, four promotions. AI, computer vision, IoT, traceability, compliance, and the platforms that tie quality, trust, and business decisions together.</p>
+      <div class="cta r d4">
+        <a class="btn primary" href="#work">Explore my proof of work<i>&rarr;</i></a>
+        <a class="btn ghost" href="#flagship">View flagship platform</a>
+        <a class="btn bare" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <aside class="hero-card r d2" aria-label="Profile">
+      <div class="card-frame"></div>
+      <div class="pcard">
+        <div class="pphoto"><img src="assets/kinshuk-hero.jpg" alt="Portrait of Kinshuk Attri" onerror="this.closest('.pphoto').classList.add('noimg')"></div>
+        <div class="pmeta">
+          <div><b>Kinshuk Attri</b><span>IIT Ropar · Mechanical, 2020</span></div>
+          <em>Shipping now</em>
+        </div>
+        <ul class="ptags">
+          <li>AI Products</li><li>Computer Vision</li><li>Enterprise SaaS</li>
+          <li>Traceability</li><li>Compliance</li><li>Growth &amp; GTM</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <div class="ticker" aria-label="Proof points">
+    <div class="track">
+      <span >Traceability and material movement systems running in production across 2 nations</span><span >Every box of fruit traceable from farm gate in one country to a hub in another</span><span >Products I drive contribute an estimated 40 to 50 percent of company topline</span><span >523 districts digitized for a national food quality program</span><span >32 commodities and over 1 lakh MT assayed</span><span >1M plus MT of annual procurement supported by AI quality systems</span><span >Autonomous computer vision grading across 30 plus analysers and 10 plus commodities</span><span >Compliance surveillance cut from 8 to 10 months to about 1 month</span><span >20 percent plus food waste cut in smart kitchen deployments</span><span >3,000 plus farmer incomes improved by about 1.4x</span><span >Shipped across GCC, Europe, Africa, Asia, and North and South America</span><span aria-hidden="true">Traceability and material movement systems running in production across 2 nations</span><span aria-hidden="true">Every box of fruit traceable from farm gate in one country to a hub in another</span><span aria-hidden="true">Products I drive contribute an estimated 40 to 50 percent of company topline</span><span aria-hidden="true">523 districts digitized for a national food quality program</span><span aria-hidden="true">32 commodities and over 1 lakh MT assayed</span><span aria-hidden="true">1M plus MT of annual procurement supported by AI quality systems</span><span aria-hidden="true">Autonomous computer vision grading across 30 plus analysers and 10 plus commodities</span><span aria-hidden="true">Compliance surveillance cut from 8 to 10 months to about 1 month</span><span aria-hidden="true">20 percent plus food waste cut in smart kitchen deployments</span><span aria-hidden="true">3,000 plus farmer incomes improved by about 1.4x</span><span aria-hidden="true">Shipped across GCC, Europe, Africa, Asia, and North and South America</span>
+    </div>
+  </div>
+</section>
+
+<section id="thesis" class="sec">
+  <p class="eyebrow"><span class="enum">01</span>The pattern behind my work</p>
+  <h2 class="head">Every product I build follows the same loop.</h2>
+  <p class="lede">Across traceability, smart kitchens, lab compliance, vision grading, and payment assurance, the problem is rarely just software. It is the broken loop between field activity, quality evidence, compliance logic, business approval, and final action. I close that loop. Same pattern, different domain, every time.</p>
+  <div class="loopbar" aria-hidden="true">
+    <span class="lb">Problem</span><i class="lbsep">&rarr;</i><span class="lb">Workflow</span><i class="lbsep">&rarr;</i><span class="lb">Data</span><i class="lbsep">&rarr;</i><span class="lb">Intelligence</span><i class="lbsep">&rarr;</i><span class="lb">Decision</span><i class="lbsep">&rarr;</i><span class="lb">Outcome</span>
+  </div>
+  <div class="loopgrid">
+    
+    <article class="loop r">
+      <span class="loopn">01</span>
+      <h3>Find the broken loop</h3>
+      <p>Most failures are not technology failures. They are invisible operations. I look for the loop where field activity, evidence, approval, and action have come apart.</p>
+    </article>
+    <article class="loop r">
+      <span class="loopn">02</span>
+      <h3>Find the hidden stakeholder</h3>
+      <p>There is always a user nobody designed for. The field operator. The auditor. The finance team waiting on proof. I map everyone who creates, verifies, consumes, or approves data.</p>
+    </article>
+    <article class="loop r">
+      <span class="loopn">03</span>
+      <h3>Digitize without adding friction</h3>
+      <p>If capture is harder than the old way, the data dies. I design the field flow first, for people who are busy, offline, and not technical.</p>
+    </article>
+    <article class="loop r">
+      <span class="loopn">04</span>
+      <h3>Add the right intelligence</h3>
+      <p>Rules where the answer is deterministic. RAG where it must be grounded. Vision where the input is visual. APIs where speed matters. People where the risk is high.</p>
+    </article>
+    <article class="loop r">
+      <span class="loopn">05</span>
+      <h3>Close the loop</h3>
+      <p>A score, a status, an alert, an approval, a next action. The product is not done until the decision is made and the loop feeds itself.</p>
+    </article>
+    <article class="loop r">
+      <span class="loopn">06</span>
+      <h3>Measure what the business measures</h3>
+      <p>Adoption, cycle time, cost saved, risk reduced, revenue, trust. Shipping is the start of the scoreboard, not the end of it.</p>
+    </article>
+  </div>
+</section>
+
+<section id="flagship" class="sec dark">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="sec-in">
+    <p class="eyebrow"><span class="enum">02</span>Flagship platform</p>
+    <h2 class="head light">An assurance platform that tracks product from origin to the box in your hand.</h2>
+    <p class="lede dim">One operating system for material movement, traceability, quality, and payment. It is in production, moving real product across borders, and it can trace a single box at a packing floor in one country back to the exact farm gate in another, with the quality score it earned on the way. Configurable as a chain of nodes, so the same platform fits any commodity.</p>
+    <div class="pillars">
+      
+      <article class="pillar r">
+        <span class="pnum">01</span>
+        <h3>Material movement and traceability</h3>
+        <p class="ptag">Where is every unit, right now?</p>
+        <p class="ppurpose">Track product as it moves through every node of a supply chain, in production, across borders, down to the individual box. Origin to end customer, with a live inventory balance at every step.</p>
+        <ul><li>Chain and node architecture: configure any supply chain as a sequence of nodes</li><li>Material moves node to node with a confirmed push at each handoff</li><li>Automatic unit of measure conversion across nodes, container to pallet to box</li><li>Live inventory balance per node and per lot, with split state support</li><li>Reconciliation alerts the moment quantities stop adding up</li><li>Box level reverse traceability back to the source farm and its quality score</li></ul>
+      </article>
+      <article class="pillar r">
+        <span class="pnum">02</span>
+        <h3>Product and quality assurance</h3>
+        <p class="ptag">Is the quality real?</p>
+        <p class="ppurpose">Take subjectivity out of quality. Decide grade, defects, and pass or fail from evidence, not opinion, and tie every inspection to the exact unit it belongs to.</p>
+        <ul><li>Computer vision grading and defect detection</li><li>Physical and chemical quality assessment</li><li>Inspections mapped to the right node in the chain</li><li>Geo tagged, timestamped photo and video evidence</li><li>Inspection results that travel with the lot, not in a separate file</li><li>Coverage across grains, oilseeds, pulses, spices, fresh produce, nuts and more</li></ul>
+      </article>
+      <article class="pillar r">
+        <span class="pnum">03</span>
+        <h3>Process and payment assurance</h3>
+        <p class="ptag">Did it happen, and can we pay?</p>
+        <p class="ppurpose">Digitize every field operation into one auditable record, then turn that evidence into trusted, milestone based payment decisions.</p>
+        <ul><li>Inspector mobile app and manager web console</li><li>Configurable workflows and checklists</li><li>Task assignment and role based access</li><li>Real time analytics, alerts, and custom reports</li><li>Milestone based, smart contract payments</li><li>Immutable, shared records across the chain</li></ul>
+      </article>
+    </div>
+    <div class="chainwrap r">
+      <p class="chainhead">How a single box flows through it, and traces back</p>
+      <div class="chain">
+        <span class="chip">Origin farm gate</span><i>&rarr;</i><span class="chip">Inbound and QC</span><i>&rarr;</i><span class="chip">Warehouse</span><i>&rarr;</i><span class="chip">Ripening</span><i>&rarr;</i><span class="chip">Packing to box</span><i>&rarr;</i><span class="chip">Dispatch</span><i>&rarr;</i><span class="chip">End customer</span>
+      </div>
+    </div>
+    <div class="ba r">
+      <div class="bacol before">
+        <p class="balabel">Before</p>
+        <ul><li>Excel trackers</li><li>Manual inspection reports</li><li>WhatsApp updates</li><li>No idea what stock sits where</li><li>Quality data divorced from the lot it describes</li><li>No way to trace a box back to its farm</li><li>No real time visibility</li></ul>
+      </div>
+      <div class="baarrow" aria-hidden="true">&rarr;</div>
+      <div class="bacol after">
+        <p class="balabel gold">After</p>
+        <ul><li>One source of truth from origin to end customer</li><li>Live inventory balance at every node</li><li>Automatic unit conversion across the chain</li><li>Inspection evidence tied to each unit</li><li>Pick any box and trace it back to the source farm and its quality score</li><li>Milestone based payments on verified movement</li><li>Live management dashboards across nodes</li></ul>
+      </div>
+    </div>
+    <div class="owned r">
+      <p class="ownedhead">What I owned as PM</p>
+      <ul><li>Product strategy and roadmap</li><li>The chain and node data model</li><li>Unit of measure and conversion logic</li><li>Customer discovery in the field</li><li>AI and rules architecture decisions</li><li>Live inventory and reconciliation design</li><li>Reverse traceability and the demo that proves it</li><li>Enterprise deployments and rollout</li><li>CEO level strategy and investor material</li><li>Post acquisition integration of a US computer vision company</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="sec">
+  <p class="eyebrow"><span class="enum">03</span>Proof of work</p>
+  <h2 class="head">Nine products. Real problems, real users, real numbers.</h2>
+  <p class="lede">Client names are generalized, the work is mine. Each one is the full story: the problem as it really looked, the users, the decisions I made, the workflow, the intelligence layer, what shipped, and what it proves. Open any card.</p>
+  <div class="csgrid">
+  <button class="csc r" data-cs="traceability" aria-expanded="false" aria-controls="d-traceability">
+    <div class="csc-top"><span class="cst">Traceability · Material Movement · Inventory</span><span class="csarrow">&#8599;</span></div>
+    <h3>End to End Traceability and Material Movement</h3>
+    <p class="csclient">In production with enterprise clients</p>
+    <p class="csone">Pick up a single box of fruit at a packing floor in one country and trace it all the way back to the exact farm gate in another, through every node it passed and the quality score it earned. That is the system I drive.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="autonomous-cv" aria-expanded="false" aria-controls="d-autonomous-cv">
+    <div class="csc-top"><span class="cst">Computer Vision · Autonomous Inspection · MLOps</span><span class="csarrow">&#8599;</span></div>
+    <h3>Autonomous Food Quality Inspection</h3>
+    <p class="csclient">Leading global berry and nut brands</p>
+    <p class="csone">A patented analyser plus a self improving AI platform that grades food quality on its own, at a fraction of the cost and several times the sample size of manual inspection.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="surveillance" aria-expanded="false" aria-controls="d-surveillance">
+    <div class="csc-top"><span class="cst">Govtech · Compliance · RAG</span><span class="csarrow">&#8599;</span></div>
+    <h3>National Food Surveillance and Lab Compliance</h3>
+    <p class="csclient">A national food safety regulator</p>
+    <p class="csone">Thousands of food samples a year, across districts, commodities, and labs, run on paper. I helped turn that into a digital, traceable, decision ready system.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="vision" aria-expanded="false" aria-controls="d-vision">
+    <div class="csc-top"><span class="cst">Computer Vision · MLOps · Quality</span><span class="csarrow">&#8599;</span></div>
+    <h3>Computer Vision Quality Grading Platform</h3>
+    <p class="csclient">Procurement and quality teams across three countries</p>
+    <p class="csone">Two experts grade the same sample and disagree. I productized vision grading that money rides on, and most of the work was earning the right to be the source of truth.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="kitchen" aria-expanded="false" aria-controls="d-kitchen">
+    <div class="csc-top"><span class="cst">IoT · Multimodal AI · Operations</span><span class="csarrow">&#8599;</span></div>
+    <h3>Smart Kitchen and Food Waste Intelligence</h3>
+    <p class="csclient">One of the world's largest foodservice companies</p>
+    <p class="csone">Big kitchens waste a lot of food and measure almost none of it. I built the system that made waste visible, then actionable, with scales, sensors, and a multimodal model.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="honey" aria-expanded="false" aria-controls="d-honey">
+    <div class="csc-top"><span class="cst">Traceability · Mobile · Blockchain</span><span class="csarrow">&#8599;</span></div>
+    <h3>Honey Traceability Network</h3>
+    <p class="csclient">India's largest honey brand</p>
+    <p class="csone">Honey moves through beekeepers, aggregators, traders, and vendors before a brand ever sees it. I built the app network that made the whole chain visible and geo tagged from hive to plant.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="barley" aria-expanded="false" aria-controls="d-barley">
+    <div class="csc-top"><span class="cst">Procurement · Traceability · Quality</span><span class="csarrow">&#8599;</span></div>
+    <h3>Smart Barley Procurement Program</h3>
+    <p class="csclient">A global brewing and beverage leader</p>
+    <p class="csone">Contracted farmers, warehouses, third party processors, brewing plants. The quality and volume data never lined up. I helped build the one platform that standardized it.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="audits" aria-expanded="false" aria-controls="d-audits">
+    <div class="csc-top"><span class="cst">Foodservice · Supplier Assurance · Compliance</span><span class="csarrow">&#8599;</span></div>
+    <h3>Supplier and Kitchen Audit Platform</h3>
+    <p class="csclient">A large multinational foodservice company</p>
+    <p class="csone">Audits were happening on paper and in memory. I helped turn them into a standardized, real time governance system with risk based inspections and live dashboards.</p>
+    <span class="csopen">Read the case study</span>
+  </button>
+  <button class="csc r" data-cs="fmcg" aria-expanded="false" aria-controls="d-fmcg">
+    <div class="csc-top"><span class="cst">Procurement Quality · Fraud Reduction · Analytics</span><span class="csarrow">&#8599;</span></div>
+    <h3>FMCG Inbound Quality Traceability</h3>
+    <p class="csclient">One of India's largest FMCG companies</p>
+    <p class="csone">Manual assaying at warehouse inbound was slow, paper based, and open to fraud. I helped digitize it into instant, on field quality with live dashboards, and the savings were real.</p>
+    <span class="csopen">Read the case study</span>
+  </button></div>
+  <div id="csdetailslot">
+<div class="csd" id="d-traceability" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Global fresh supply chains move product through a long line of hands. A container of fruit lands in one country, clears inbound QC, sits in a warehouse, moves to ripening, then gets packed into thousands of individual boxes that ship to customers. Along the way the unit of measure keeps changing, container to pallet to box, and the quality evidence lives in a separate world from the material itself.</p><p class="bs">So nobody can answer the question that actually matters: this box in my hand, where did it come from, who inspected it, and was it good?</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">When you cannot connect a box back to its source, you cannot prove quality, manage a recall, settle a dispute, or trust your own inventory numbers. Everything downstream is guesswork.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Field inspectors at origin</li><li>Inbound QC and warehouse teams</li><li>Ripening and packing teams</li><li>Management watching live stock and traceability</li><li>The end customer who wants to trust the product</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Product inspected and logged at the origin farm gate with a quality score</li><li>Pushed across the border to inbound QC, checked against the origin result</li><li>Broken down in the warehouse as the unit converts from container to pallets</li><li>Some pallets move to ripening, some hold, tracked as split inventory</li><li>Ripened pallets packed into individual boxes, the unit converting again</li><li>Any box queried later returns its full chain history back to the source farm</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Model any supply chain as a configurable chain of nodes, so the same product fits a fruit import or a grain network without a rebuild</li><li>Make material move node to node with a confirmed push, and auto convert the unit at every boundary, with a confirmation prompt before it commits</li><li>Support split inventory, because one container is rarely in one state. Some pallets ripen while others wait and others ship</li><li>Treat reverse traceability as the north star: given a box, return its pallet, its container, its origin inspection, and its quality score</li><li>Flag a reconciliation error the instant quantities across nodes stop adding up to the original</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">A chain and node data model with automatic unit of measure conversion, a live inventory balance that updates on every push, split state support, reconciliation checks, and a reverse traceability query that resolves a single box to its origin and its quality score. Computer vision and inspection data attach to the right node so quality travels with the material.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Field and node mobile app</li><li>Live inventory dashboard per node and per lot</li><li>Unit conversion confirmation prompts</li><li>Reverse traceability query</li><li>Management traceability dashboard</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>A configurable chain and node engine running in production</li><li>Live inventory balance across every node, with reconciliation alerts</li><li>Box level reverse traceability from packing floor back to the origin farm</li><li>Inspection evidence tied to the exact unit it describes</li><li>Proven on a real cross border fresh produce chain, extensible to any commodity</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Management can see exactly how much stock sits at each node in real time, and trace any single box back to the farm that grew it and the score it earned. This is the foundation for a world where a brand's own customers can trace the fruit in their hand back to source.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can design the hard data model under a real supply chain, unit conversions, split inventory, reconciliation, reverse traceability, and ship it to production, not just diagram it.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-autonomous-cv" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Manual food quality inspection is slow, subjective, and small sample. An inspector eyeballs a handful of berries or nuts, makes a call, and the rest of the batch is assumed to match. Two inspectors disagree, recalls slip through, and there is no audit trail.</p><p class="bs">At industrial volume, that variance is margin lost and brand risk taken on every shipment.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">For a premium produce brand, a wrong quality call is a recall, a rejected load, or a damaged reputation. Consistency at scale is the whole game.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Quality teams at large produce brands</li><li>Plant and line operators running inspections</li><li>Buyers and suppliers settling on grade</li><li>QA leaders who need an audit trail</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Operator loads a sample into the analyser</li><li>The device captures and the AI platform assesses in real time</li><li>Defects detected and graded at the per defect level against the brand's spec</li><li>Result and evidence stored to a verifiable quality database</li><li>Models retrain on live samples through the feedback loop</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Pair a purpose built hardware analyser with a cloud AI platform, so inspection is turnkey rather than a science project on the line</li><li>Grade at the per defect level per commodity, because a brand's spec is specific, not generic</li><li>Build an auto feedback loop into the models so they keep improving from live samples</li><li>Anchor everything to a verifiable quality database, so every assessment has an audit trail</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">A patented analyser feeding a proprietary auto ML platform. Deep learning models, trained on millions of images per commodity, do per defect grading in real time on a scalable architecture, with a built in feedback loop for continuous improvement.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Turnkey hardware analyser</li><li>Cloud quality dashboard</li><li>Per defect grading reports</li><li>Verifiable quality database with audit trail</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>Autonomous grading deployed across 30 plus analysers and 10 plus commodities</li><li>In use by leading global berry and nut brands</li><li>Models trained on millions of images and data points per commodity</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Roughly 4x lower operational cost than manual inspection and around 3x larger sample size, which means better quality calls and fewer recalls. Inspection went from a person's judgement to a consistent, auditable machine decision.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can drive a hardware plus AI product for demanding global brands, where the bar is industrial reliability and the output has to be trusted on the line every single time.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-surveillance" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">A national regulator and its lab network handle huge sample volumes every year, from spices and edible oils to fortified and ready to eat foods. The workflow was paper heavy. A sample left a shelf, moved through couriers and labs, and a compliance decision came back months later, if the paper survived the journey.</p><p class="bs">Surveillance cycles ran 8 to 10 months. By the time a result mattered, the season had moved on.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">Slow compliance is not a paperwork problem. It is unsafe food staying in the market longer, and procurement decisions made blind.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Field samplers buying as mystery shoppers</li><li>Lab teams across accredited labs</li><li>Compliance officers and regulators</li><li>Logistics moving samples</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Sampler buys and logs a sample with photo, geo tag, and seal</li><li>Sample routed to an accredited lab with full chain of custody</li><li>Lab results captured against commodity and standard</li><li>Compliance engine retrieves the applicable rule and surfaces gaps</li><li>Officer reviews, decides, and the national dashboard updates live</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Build a sampler app plus portal so capture, chain of custody, and lab status live in one place</li><li>Make every sample geo tagged and timestamped from shelf to lab, no exceptions</li><li>Add a retrieval based compliance engine so officers get source backed answers, not opinions</li><li>Keep the pass, fail, and review decision on rules and human review, never on a model alone</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">A RAG compliance engine that ingests regulations, commodity standards, country thresholds, and lab results, then validates a sample against the right rule and flags what is missing. The model reads and explains. The rules and the officer decide.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Sampler mobile app</li><li>Compliance portal</li><li>Lab status monitoring</li><li>National compliance dashboards</li><li>Geo tagged traceability map</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>523 districts digitized across 16 states</li><li>Spices program: thousands of samples, 10 plus commodities, 50 plus accredited labs</li><li>Fruit and vegetable program: thousands of samples across 20 plus commodities</li><li>Real time national compliance dashboards</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Surveillance cycles came down from 8 to 10 months to about a month. Decisions moved from anecdote to a live national view. Procurement and enforcement teams could finally act on current data.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can take a slow, paper bound, politically sensitive operation at national scale and turn it into a system people trust enough to make fast decisions on.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-vision" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Manual commodity grading is subjective, slow, expert dependent, and impossible to audit later. The same sample gets two grades from two graders, and procurement pays against that variance.</p><p class="bs">Scaling it across locations, seasons, and crops only multiplies the inconsistency.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">When a grade sets a price, variance is money and disputes. The output has to be consistent, fast, and defensible.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Procurement teams paying against grade</li><li>Quality labs and human graders</li><li>Field operators running capture</li><li>Buyers who need a defensible grade per lot</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Sample prepared under a controlled SOP</li><li>Image captured on a calibrated device, with a quality gate before inference</li><li>Model returns grade, defects, score, and confidence</li><li>Result stored against batch metadata, fully replayable</li><li>Dashboards roll grades into procurement and quality trends</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Treat trust as a launch requirement, not a later fix, because the output influences payment</li><li>Design capture SOPs and calibration with field teams, since a great model on a bad image is a bad product</li><li>Track false accept and false reject separately, because they carry different commercial cost</li><li>Define release criteria per commodity and geography, not one global bar</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">Computer vision models trained on expert labelled data for grade, defect detection, and scoring. Wrapped in an image quality gate, calibration, repeatability testing, and production monitoring for drift and expert agreement.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Capture app and calibrated device</li><li>Quality scorecards</li><li>Procurement insight dashboards</li><li>Model monitoring views</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>Grading across grains, tea, fruits and vegetables, and oilseeds</li><li>Supported a patented computer vision tea grading approach</li><li>Deployed across 3 countries and 100 plus procurement centres</li><li>Supported 1M plus MT of annual procurement, with over 1 lakh MT assayed</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Grading became consistent, fast, and auditable. Model iteration cycles came down by around 80 percent once the data and validation pipeline matured.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can productize AI in a place where it touches money, build the trust scaffolding around the model, and scale it across geographies without it falling apart after the pilot.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-kitchen" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Large catering operations waste food at scale, with little measurement. Logging is manual when it happens. Nobody knows if the driver is overproduction, prep, or plate waste, or which dish, day, or kitchen is the problem.</p><p class="bs">Cold chain visibility was thin too. Temperature logs lived on paper, and supplier certificates lived in inboxes.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">You cannot reduce what you cannot see. And a kitchen running blind on temperature is a food safety risk, not just a cost.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Kitchen staff mid service</li><li>Kitchen managers setting portions and prep</li><li>Operations leaders comparing sites</li><li>Vendor compliance teams</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Staff place waste on a connected scale and weight captures automatically</li><li>Camera captures the waste image</li><li>Model classifies waste type and dish with a stated reason</li><li>Staff confirm or correct in one tap</li><li>Bluetooth sensors stream temperature and humidity in the background</li><li>Dashboards break waste down by day part, dish, location, vendor, and reason</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Make capture take seconds, because staff are mid service and will skip anything slower</li><li>Use a multimodal API for waste classification at MVP rather than training a model with no data</li><li>Treat every user correction as a label that funds a future custom model</li><li>Bring audits, sensors, SOPs, and waste under one roof instead of five tools</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">A multimodal model classifies waste type and dish from images. Bluetooth and IoT sensors handle temperature and humidity with completeness checks. Analytics turn it into day part, dish, and location level insight.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Kitchen capture app</li><li>Connected weighing scale</li><li>Bluetooth temperature and humidity sensors</li><li>Operations and sustainability dashboards</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>Digitized the full catering chain: supplier audits, kitchen audits, cold chain, SOPs, and waste</li><li>Real time compliance and sustainability reporting</li><li>Dish and day part level waste analytics</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Deployments delivered 20 percent plus food waste reduction. Once a manager could see that a specific dish on a specific day was the problem, the fix was a portioning decision, not a campaign.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can stitch hardware, sensors, AI, and a field workflow into one product, and sequence the AI bet so it pays for the next version of itself.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-honey" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Honey supply is fragmented and opaque. A brand buying at the plant has no real visibility into origin, flora, harvest time, or how a batch moved from a beekeeper through aggregators and traders to a vendor.</p><p class="bs">Without that, there is no real traceability story to stand behind, and no real grip on procurement cost or pricing.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">For a consumer brand, origin is trust. For procurement, visibility is price. The chain had neither.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Beekeepers, often first time app users</li><li>Aggregators and traders</li><li>Vendors building large batches</li><li>Plant and management teams</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Beekeeper records harvest and sale with bee boxes, flora, dates, photo, and geo tagged farm location</li><li>Trader or aggregator scans QR, records sales on behalf of beekeepers, and delivers lots to a vendor</li><li>Vendor creates batches, fills, captures moisture, PO, and invoice, and dispatches</li><li>Every transaction and location is captured and rolled into a management dashboard</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Build a different app flow for each actor instead of forcing one generic app on everyone</li><li>Let any actor create a lot on behalf of a beekeeper, so onboarding never blocks the chain</li><li>Geo tag and timestamp every lot and every handoff</li><li>Capture future quality fields, like moisture and flora to glucose ratio, so the same rails carry quality later</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">QR based lot tracking, geo tagged lot creation, and full transaction capture, anchored to a public blockchain for tamper evident records. Reports export to Excel and CSV, with concise batch summaries and an actor engagement dashboard.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Beekeeper app</li><li>Trader and aggregator app</li><li>Vendor app with batch creation and filling</li><li>QR scanning</li><li>Management dashboard with geo tagged map and flora wise procurement</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>A working pilot covering every transaction scenario across 2 vendors, 2 traders, 4 aggregators, and 14 beekeepers</li><li>Geo tagged supply chain visibility from hive to plant</li><li>Management reporting with batch and actor level insight</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Around 1.2M dollars in annual value generated, with a reported lift in brand trust, a small drop in procurement cost from field data, and a small revenue gain from better, traceable pricing. For the detailed deck and walkthrough, reach out to me.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can design for the hardest user in the chain, a first time app user in the field, and still deliver a multi actor network that management can run a brand on.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-barley" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">The barley chain runs from contracted farmers to company warehouses, then to third party malters, then to brewing plants across regions. With that many handoffs and third parties, quality and volume data is never standardized.</p><p class="bs">The client needed one platform that could onboard every actor and give a single, trusted view of quality and quantity.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">When processors and plants disagree on what arrived and at what quality, every dispute is expensive and slow.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Contracted farmers</li><li>Warehouse and procurement teams</li><li>Third party malters and inspectors</li><li>Brewing plant quality teams</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Actors onboarded onto one platform</li><li>Rapid quality assaying at lot inspection</li><li>Third party inspections managed and standardized across locations</li><li>Quality and volume rolled into one assurance dashboard</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Standardize quality assaying so a grade means the same thing at every site</li><li>Build third party inspection management into the platform, not around it</li><li>Make lot level inspection and traceability the spine, so volume and quality travel together</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">Rapid quality assaying technology for lot inspections, plus an integrated suite for third party inspection management, feeding a single assurance dashboard with state and site level views.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Inspection app</li><li>Procurement quality dashboard</li><li>State and site level analytics</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>A one stop quality audit and traceability platform across the chain</li><li>Standardized quality and quantity data across farmers, warehouses, and third parties</li><li>Site and state level procurement quality insight</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">A fragmented, multi party chain got a single source of truth for quality and volume, which is the precondition for trust between a buyer and its processors.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can bring rival incentives onto one platform and make a shared, standardized record stick across third parties.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-audits" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Supplier and kitchen inspections were fragmented and manual. Standards drifted between sites, visibility into compliance was thin, and risk management was reactive.</p><p class="bs">With no central system and no standard audit framework, tracking performance, enforcing accountability, and scaling were all hard.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">In foodservice, an unaudited supplier or a drifting kitchen is a safety and brand risk that compounds quietly until it does not.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Auditors and inspectors</li><li>Quality and compliance managers</li><li>Supplier and kitchen managers</li><li>Operations leadership</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Supplier or kitchen onboarded with a structured audit</li><li>Risk based periodic inspections scheduled</li><li>Findings, evidence, and food testing captured in one place</li><li>Dashboards surface risk, trends, and accountability in real time</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Centralize inspections, audits, and compliance into one configurable platform</li><li>Split onboarding audits from risk based periodic inspections</li><li>Wire inspection data into food testing and dashboards so decisions are data driven, not anecdotal</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">A configurable audit and inspection engine with checklist logic and risk based scheduling, integrated with food testing and a real time analytics layer.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>Inspector mobile app</li><li>Compliance tracking console</li><li>Risk and performance dashboards</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>A standardized, scalable quality governance framework across the network</li><li>Real time visibility and proactive risk management</li><li>Digitized workflows with accountability and performance tracking</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">Audits moved from filing to governance. Standards held across sites, and risk could be managed before it became an incident.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can take an inconsistent, people dependent process and turn it into a system that scales without losing rigor.</p></div>
+    </div>
+  </div>
+</div>
+<div class="csd" id="d-fmcg" hidden>
+  <div class="csd-in">
+    <div class="csd-grid">
+      <div class="csd-col">
+        <div class="db"><p class="dbh">The messy problem</p><p class="bs">Inbound quality assaying at warehouses, mostly for rice, was manual. That meant fraud, wastage, paper based logs prone to error, and no real time visibility across locations.</p><p class="bs">When quality data is soft, moisture losses and corruption follow.</p></div>
+        <div class="db"><p class="dbh">Why it mattered</p><p class="bs why">At commodity scale, a small error rate on quality and moisture is millions of dollars and a trust problem with suppliers.</p></div>
+        <div class="db"><p class="dbh">Users and stakeholders</p><ul class="dlist"><li>Warehouse quality assayers</li><li>District and HQ procurement teams</li><li>Independent third party assayers</li><li>Leadership watching cost and risk</li></ul></div>
+        <div class="db"><p class="dbh">Workflow I designed</p><ol class="dsteps"><li>Lot arrives at warehouse inbound</li><li>Instant digital quality assessment, physical and chemical</li><li>Independent assayer validates in disputes</li><li>Records logged digitally and surfaced on live dashboards</li><li>Procurement volume and purchase decisions made on current data</li></ol></div>
+      </div>
+      <div class="csd-col">
+        <div class="db"><p class="dbh">Product decisions I made</p><ul class="dlist"><li>Move to instant, on field digital quality assessment, both physical and chemical</li><li>Add trained, certified, independent assayers to remove disputes and corruption</li><li>Digitize record keeping with live dashboards at district offices and HQ so decisions are proactive</li></ul></div>
+        <div class="db"><p class="dbh">Intelligence layer</p><p class="bs grnd">Digital, instant, on field quality assessment combining physical and chemical testing, backed by certified independent assayers and a real time reporting layer for proactive procurement decisions.</p></div>
+        <div class="db"><p class="dbh">Product surfaces</p><ul class="chips dark-chips"><li>On field assaying tools</li><li>District and HQ live dashboards</li><li>Digitized quality records</li></ul></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="csd-foot">
+      <div class="db"><p class="dbh">What shipped</p><ul class="dlist"><li>Around 5.5 MMT of commodity lots processed through the system</li><li>Digital, auditable quality records replacing paper</li><li>Real time visibility from warehouse to HQ</li></ul></div>
+      <div class="db"><p class="dbh">Business impact</p><p class="bs">More than 10.5M dollars saved across three seasons, from correct quality data, lower moisture losses, and reduced corruption.</p></div>
+      <div class="db"><p class="dbh">What this proves about me</p><p class="bs proves">I can attach a clean, hard number to product work, and build the kind of trustworthy data layer that changes how a business buys.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section id="systems" class="sec alt">
+  <p class="eyebrow"><span class="enum">04</span>Systems I have shipped</p>
+  <h2 class="head">Not one trick. A toolkit built across years.</h2>
+  <p class="lede">Each of these is a real system behind the case studies. Together they are the range: AI, vision, IoT, blockchain, workflow, and the analytics that prove it all worked.</p>
+  <div class="sysgrid">
+    
+    <article class="sysc r">
+      <h3>RAG compliance engine</h3>
+      <p>Retrieval over regulations, SOPs, and standards so officers get source backed compliance answers, not a chatbot guess.</p>
+      <span class="syslayer">RAG + human review</span>
+    </article>
+    <article class="sysc r">
+      <h3>Agentic lab report validation</h3>
+      <p>Parse test report PDFs, extract parameters, check against thresholds, and route only the unclear ones to people.</p>
+      <span class="syslayer">OCR + rules + agentic flow</span>
+    </article>
+    <article class="sysc r">
+      <h3>Computer vision grading</h3>
+      <p>Grade, defect, and score commodities from images, with calibration and monitoring built in.</p>
+      <span class="syslayer">CV + MLOps</span>
+    </article>
+    <article class="sysc r">
+      <h3>AI quality assessment</h3>
+      <p>Standardized physical and chemical quality scoring that replaces subjective manual checks.</p>
+      <span class="syslayer">Vision + sensors + rules</span>
+    </article>
+    <article class="sysc r">
+      <h3>IoT smart kitchen monitoring</h3>
+      <p>Connected scales and sensors that turn cold chain and waste into live, auditable data.</p>
+      <span class="syslayer">IoT + analytics</span>
+    </article>
+    <article class="sysc r">
+      <h3>BLE sensor integrations</h3>
+      <p>Bluetooth temperature and humidity capture with completeness checks and tier wise alerts.</p>
+      <span class="syslayer">BLE + alerting</span>
+    </article>
+    <article class="sysc r">
+      <h3>Traceability and QR systems</h3>
+      <p>Lot and batch level tracking with geo tags and QR, from source to shipment.</p>
+      <span class="syslayer">Mobile + QR + geo</span>
+    </article>
+    <article class="sysc r">
+      <h3>Blockchain trust and payments</h3>
+      <p>Milestone based, smart contract payments anchored to tamper evident records.</p>
+      <span class="syslayer">Blockchain + smart contracts</span>
+    </article>
+    <article class="sysc r">
+      <h3>Digital audit workflow engine</h3>
+      <p>Configurable checklists, risk based scheduling, evidence capture, and scoring.</p>
+      <span class="syslayer">Workflow engine</span>
+    </article>
+    <article class="sysc r">
+      <h3>Lab and surveillance platform</h3>
+      <p>Sampler app, chain of custody, lab status, and national compliance dashboards.</p>
+      <span class="syslayer">Mobile + portal + analytics</span>
+    </article>
+    <article class="sysc r">
+      <h3>Product analytics and KPI systems</h3>
+      <p>The metric layer that turns operations into adoption, cycle time, and revenue signals.</p>
+      <span class="syslayer">Analytics + dashboards</span>
+    </article>
+    <article class="sysc r">
+      <h3>No code operational tools</h3>
+      <p>Configurable workflows so a new deployment is setup, not a custom build.</p>
+      <span class="syslayer">Config driven</span>
+    </article>
+  </div>
+</section>
+
+<section id="thinking" class="sec">
+  <p class="eyebrow"><span class="enum">05</span>Product thinking library</p>
+  <h2 class="head">How I think, beyond what I have shipped.</h2>
+  <p class="lede">Range is a strategy skill. These are the problems I picked apart for fun and for sharpness, across consumer, marketplace, growth, and enterprise go to market. Each one comes with the full deck.</p>
+  <div class="thinkgrid">
+    
+    <article class="thinkc r">
+      <div class="tk-top"><span class="tkkind">Enterprise GTM strategy</span></div>
+      <h3>Winning Fortune 500 for Google Shopping</h3>
+      <p class="tksub">Go to market strategy</p>
+      <p class="tkblurb">How should Google market Shopping to Fortune 500 advertisers to drive large scale enterprise adoption?</p>
+      <ul><li>Thesis: position Shopping as infrastructure that captures intent before the purchase decision, not just an ad channel. Amazon wins at checkout, Google wins at the moment of choice.</li><li>Named the real blockers as enterprise adoption challenges, not product gaps: AI opacity, internal silos, attribution, competitive perception, and budget reallocation risk.</li><li>Built an adoption model on three drivers: Trust, Value, and Future Advantage, each mapped to a specific barrier.</li><li>Proposed three initiatives: an enterprise command center over Performance Max, a category leadership program, and an AI commerce partnership program, with a three layer KPI framework.</li></ul>
+      <p class="tkclose">Enterprise GTM thinking end to end: segmentation, narrative, packaging, and a CFO ready measurement framework.</p>
+      <a class="deckbtn" href="decks/google-shopping.pdf" target="_blank" rel="noopener" data-deck>
+        <span class="dicon" aria-hidden="true">&#8595;</span> Download the deck
+      </a>
+    </article>
+    <article class="thinkc r">
+      <div class="tk-top"><span class="tkkind">Product teardown</span></div>
+      <h3>Blinkit, India's quick commerce play</h3>
+      <p class="tksub">Consumer product teardown</p>
+      <p class="tkblurb">A full teardown of a 10 minute grocery app: the model, the money, the journey, and where the growth actually comes from.</p>
+      <ul><li>Model: hyperlocal partner stores plus dark store fulfillment and tight logistics for sub 10 minute delivery.</li><li>Money: commission, surge pricing, ads and promotions, delivery and handling. Highest AOV in the category at the time of writing.</li><li>Mapped personas, the full user flow, onboarding, and the checkout levers that lift basket size and retention.</li><li>Built the KPI tree and metric stack: north star of orders delivered, with conversion, AOV, and daily transaction value beneath it.</li></ul>
+      <p class="tkclose">Reverse engineering a consumer product down to its growth loops and unit economics.</p>
+      <a class="deckbtn" href="decks/blinkit.pdf" target="_blank" rel="noopener" data-deck>
+        <span class="dicon" aria-hidden="true">&#8595;</span> Download the deck
+      </a>
+    </article>
+    <article class="thinkc r">
+      <div class="tk-top"><span class="tkkind">Product strategy</span></div>
+      <h3>Creator Commerce Intelligence</h3>
+      <p class="tksub">Closed loop creator ROI</p>
+      <p class="tkblurb">Creator selection is still a guessing game. Brands fund creators on vanity metrics that do not predict revenue, then send that high intent traffic to generic pages.</p>
+      <ul><li>The real gap is not discovery. It is missing infrastructure: weak selection signals, generic post click experiences, and slow attribution.</li><li>Proposed a closed loop: Predict creator ROI, Route traffic to creator specific journeys, Learn from conversion data to reallocate budget.</li><li>Validation by structured discovery across budget, selection logic, post click experience, attribution trust, and ownership.</li><li>Pilot framed as a clean 50/50 A/B test with conversion, revenue per session, and AOV as the targets.</li></ul>
+      <p class="tkclose">Positions the platform's evolution from conversion optimization to a decision plus experience layer.</p>
+      <a class="deckbtn" href="decks/fermat.pdf" target="_blank" rel="noopener" data-deck>
+        <span class="dicon" aria-hidden="true">&#8595;</span> Download the deck
+      </a>
+    </article>
+    <article class="thinkc r">
+      <div class="tk-top"><span class="tkkind">Product teardown</span></div>
+      <h3>Farmart, agri commerce marketplace</h3>
+      <p class="tksub">Marketplace teardown</p>
+      <p class="tkblurb">A teardown of an agri commerce marketplace: the farmer and retailer journey, procurement, trust, credit, and fulfillment.</p>
+      <ul><li>Frames the marketplace dynamics between farmers, retailers, and buyers, and where trust breaks.</li><li>Looks at procurement, supply chain, credit, and fulfillment as the real adoption levers.</li><li>Identifies the adoption barriers that decide whether a two sided agri marketplace actually compounds.</li></ul>
+      <p class="tkclose">Marketplace strategy: two sided dynamics, trust, and the levers that make it compound.</p>
+      <a class="deckbtn" href="decks/farmart.pdf" target="_blank" rel="noopener" data-deck>
+        <span class="dicon" aria-hidden="true">&#8595;</span> Download the deck
+      </a>
+    </article>
+  </div>
+</section>
+
+<section id="leadership" class="sec dark">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="sec-in">
+    <p class="eyebrow"><span class="enum">06</span>Leadership and business ownership</p>
+    <h2 class="head light">I am not a roadmap manager. I carry the business.</h2>
+    <p class="lede dim">From the field to the boardroom. The same person who stood in warehouses and kitchens also scoped an acquisition and built the investor story.</p>
+    <div class="leadgrid">
+      
+      <article class="leadc r">
+        <span class="leadn">01</span>
+        <p>Worked directly with the CEO on company strategy</p>
+      </article>
+      <article class="leadc r">
+        <span class="leadn">02</span>
+        <p>Built investor decks and strategic materials</p>
+      </article>
+      <article class="leadc r">
+        <span class="leadn">03</span>
+        <p>Led technology and business scoping for the acquisition of a US based computer vision company</p>
+      </article>
+      <article class="leadc r">
+        <span class="leadn">04</span>
+        <p>Directed post acquisition integration of models, pipelines, and architecture</p>
+      </article>
+      <article class="leadc r">
+        <span class="leadn">05</span>
+        <p>Four promotions in five years, from Business Associate to Principal PM</p>
+      </article>
+      <article class="leadc r">
+        <span class="leadn">06</span>
+        <p>Range across market research, MVP validation, Android platforms, computer vision, AI, compliance, and enterprise SaaS, across GCC, Europe, Africa, Asia, and the Americas</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <p class="eyebrow"><span class="enum">07</span>About</p>
+  <div class="aboutgrid">
+    <div class="r">
+      <h2 class="head">One company. Five years. The next hardest problem, every time.</h2>
+      <p class="abp">I graduated from IIT Ropar in Mechanical Engineering in 2020 and started close to the ground, in business research, customer discovery, and MVP validation. That early exposure to farmers, field teams, inspectors, procurement, labs, enterprises, and regulators is the reason my products work where it actually matters.</p>
+      <p class="abp">Over time I moved from writing requirements to owning strategy. Android and platform products, then computer vision, AI quality systems, traceability, compliance, smart kitchens, RAG workflows, and the assurance platform. Along the way, growth thinking, UX decisions, and architecture calls were all part of the job.</p>
+      <p class="abp">The thread never changed. Find the hardest operating problem. Understand it deeply. Design the workflow. Choose the right intelligence. Ship it. Prove the outcome.</p>
+    </div>
+    <div class="r">
+      <div class="abcard">
+        <div class="abphoto"><img src="assets/kinshuk-about.jpg" alt="Kinshuk Attri" onerror="this.closest('.abphoto').classList.add('noimg')"></div>
+        <ul class="abfacts">
+          <li><b>IIT Ropar</b><span>Mechanical Engineering, 2020</span></li>
+          <li><b>4 promotions</b><span>Business Associate to Principal PM</span></li>
+          <li><b>5 regions</b><span>GCC, Europe, Africa, Asia, the Americas</span></li>
+          <li><b>One pattern</b><span>Chaos in, trusted decisions out</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="contact-in r">
+    <p class="eyebrow"><span class="enum">08</span>Let's talk</p>
+    <h2 class="chead">Have a hard product problem? Bring it.</h2>
+    <p class="lede center">I like the messy ones. The systems above started as problems nobody had cleanly framed yet. If you are building at the intersection of AI, platforms, supply chain, and real operations, I am always up for a conversation.</p>
+    <ul class="rolechips"><li>AI products</li><li>Traceability and material movement</li><li>Computer vision</li><li>Enterprise platforms</li><li>Supply chain and compliance</li><li>Growth and GTM</li></ul>
+    <div class="cbtns">
+      <a class="btn primary" href="mailto:kinshukattri1@gmail.com">Start a conversation<i>&rarr;</i></a>
+      <a class="btn ghost" href="https://linkedin.com/in/kinshukattri" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn bare" href="mailto:kinshukattri1@gmail.com?subject=Case%20study%20deck%20request">Request a detailed case study deck</a>
+    </div>
+    <p class="cnote">kinshukattri1@gmail.com &nbsp;·&nbsp; linkedin.com/in/kinshukattri</p>
+  </div>
+</section>
+<footer class="foot">
+  <p><b>Kinshuk Attri</b><span>Principal Product Manager · Trust systems for complex operations</span></p>
+  <p class="dim">Bring the problem. I have already solved harder. © 2026</p>
+</footer>
+</main>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scr', scrollY > 12); }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  var burger = document.getElementById('burger'), mob = document.getElementById('mob');
+  burger.addEventListener('click', function(){
+    var open = mob.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  Array.prototype.forEach.call(mob.querySelectorAll('a'), function(a){
+    a.addEventListener('click', function(){ mob.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+
+  var navObs = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        document.querySelectorAll('[data-nav]').forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('data-nav') === e.target.id);
+        });
+      }
+    });
+  }, {rootMargin:'-42% 0px -54% 0px'});
+  ['home','thesis','flagship','work','systems','thinking','leadership','about','contact'].forEach(function(id){
+    var el = document.getElementById(id); if(el) navObs.observe(el);
+  });
+
+  var revEls = Array.prototype.slice.call(document.querySelectorAll('.r'));
+  function show(el){ el.classList.add('in'); }
+  if ('IntersectionObserver' in window) {
+    var rev = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ show(e.target); rev.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.01});
+    revEls.forEach(function(el){
+      // Anything already on screen at load reveals right away.
+      var r = el.getBoundingClientRect();
+      if (r.top < (window.innerHeight || document.documentElement.clientHeight)) show(el);
+      else rev.observe(el);
+    });
+    // Safety net: if anything is still hidden shortly after load, reveal it.
+    setTimeout(function(){ revEls.forEach(show); }, 1200);
+  } else {
+    revEls.forEach(show);
+  }
+
+  var openId = null;
+  document.querySelectorAll('.csc').forEach(function(card){
+    card.addEventListener('click', function(){
+      var id = card.getAttribute('data-cs');
+      var next = openId === id ? null : id;
+      document.querySelectorAll('.csd').forEach(function(d){ d.hidden = true; });
+      document.querySelectorAll('.csc').forEach(function(c){
+        c.classList.remove('open'); c.setAttribute('aria-expanded','false');
+        c.querySelector('.csopen').textContent = 'Read the case study';
+      });
+      openId = next;
+      if(next){
+        var d = document.getElementById('d-'+next);
+        d.hidden = false;
+        card.classList.add('open'); card.setAttribute('aria-expanded','true');
+        card.querySelector('.csopen').textContent = 'Close case study';
+        d.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-deck]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href') || '';
+      // In a standalone preview the decks folder may not exist yet.
+      if (location.protocol === 'file:') {
+        e.preventDefault();
+        alert('Add this deck as ' + href + ' next to index.html (in a decks/ folder). On the deployed site the download works automatically.');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
